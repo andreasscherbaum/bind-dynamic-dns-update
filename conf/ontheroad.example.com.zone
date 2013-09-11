@@ -1,0 +1,12 @@
+$ORIGIN .
+$TTL 86400      ; 1 day
+ontheroad.example.com IN SOA ns1.example.com. postmaster.example.com. (
+                                2013090901 ; serial
+                                7200       ; refresh (2 hours)
+                                900        ; retry (15 minutes)
+                                604800     ; expire (1 week)
+                                7200       ; minimum (2 hours)
+                                )
+                        NS      ns1.example.com.
+$TTL 60 ; 1 minute
+                        A       10.0.0.5
